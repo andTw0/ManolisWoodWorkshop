@@ -1,0 +1,26 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs / temp
+*.log
+*.tmp
+.cache/
+
+# Node / package managers, only if accidentally added later
+node_modules/
+dist/
+build/
+.env
+.env.*
+
+# Large raw media exports
+*.psd
+*.afdesign
+*.fig
+*.mov
+*.mp4
+
+# Keep source images under 00_source/shop_images intentionally.

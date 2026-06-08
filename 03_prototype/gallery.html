@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Originals — Local Art Workshop</title>
+  <link rel="stylesheet" href="src/css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Local Art Workshop</a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Workshop</a>
+      <a href="gallery.html">Originals</a>
+      <a href="about.html">Meet Manolis</a>
+      <a href="contact.html">Visit / Ask</a>
+      <button class="language-toggle" type="button">EN / DE</button>
+    </nav>
+  </header>
+
+  <main class="section">
+    <p class="eyebrow">Inquiry catalogue</p>
+    <h1>Originals from the workshop</h1>
+    <p class="page-intro">Every piece is handmade and unique. Availability, price, and shipping are confirmed personally.</p>
+
+    <div class="category-filter" aria-label="Product categories">
+      <button type="button" data-category="All">All</button>
+      <button type="button" data-category="Sculptures">Sculptures</button>
+      <button type="button" data-category="Bowls & Vessels">Bowls & Vessels</button>
+      <button type="button" data-category="Jewelry & Small Pieces">Jewelry & Small Pieces</button>
+      <button type="button" data-category="Original Oddities">Original Oddities</button>
+    </div>
+
+    <div id="product-gallery" class="product-grid"></div>
+  </main>
+
+  <footer class="site-footer">
+    <p>Don’t buy souvenirs. Buy originals.</p>
+  </footer>
+
+  <script src="src/js/app.js"></script>
+</body>
+</html>
