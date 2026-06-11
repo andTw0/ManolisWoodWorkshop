@@ -1,0 +1,72 @@
+export const siteContent = {
+  brand: {
+    nameTop: 'Manolis',
+    nameBottom: 'Tsouris',
+    subtitle: ['Olive Wood Artist', 'Crete'],
+  },
+  contact: {
+    whatsappLabel: 'WhatsApp',
+    whatsappDisplay: '+30 697 160 4180',
+    whatsappUrl: 'https://wa.me/306971604180',
+    emailLabel: 'Email',
+    emailDisplay: 'info@eloslocalart.com',
+    emailUrl: 'mailto:info@eloslocalart.com',
+    facebookDisplay: '/localartworkshop',
+    facebookUrl: 'https://facebook.com/localartworkshop',
+    instagramDisplay: '@manolis_tsouris',
+    instagramUrl: 'https://instagram.com/manolis_tsouris',
+  },
+  home: {
+    headline: ['Every Cut', 'Tells', 'A Story.'],
+    kicker: 'Unique pieces made by hand, not by machine.',
+    cta: 'See the Work',
+    trust: [
+      { icon: '/assets/icons/heart.svg', title: 'Handmade', subtitle: 'with love' },
+      { icon: '/assets/icons/shipping.svg', title: 'Worldwide', subtitle: 'inquiry shipping' },
+      { icon: '/assets/icons/leaf.svg', title: 'Natural', subtitle: 'materials' },
+      { icon: '/assets/icons/lock.svg', title: 'Direct', subtitle: 'artist contact' },
+    ],
+  },
+  about: {
+    headline: ['When', 'Madness', 'Met Wood.'],
+    intro: 'I do not follow rules. I follow the wood.',
+    paragraphs: [
+      'This section is editable placeholder text. Replace it with the real story once the copy is finalized.',
+      'The structure is intentionally separated from the component code. Edit src/content/siteContent.ts to change this copy.',
+      'Every piece carries the marks of hand work, time, and the material itself.',
+    ],
+    signature: 'Manolis',
+    sideQuote: 'The wood remembers. I just help it speak.',
+  },
+  workshop: {
+    eyebrow: 'The Workshop',
+    headline: ['Raw Wood.', 'Real Stories.', 'One-of-a-kind.'],
+    body: 'Every piece in this workshop is carved by hand from olive wood that lived a long life before it became art.',
+    cta: 'Explore the Work',
+    categories: [
+      { icon: '/assets/icons/heart.svg', title: 'Sculptures', text: 'Faces, figures and forms with soul.' },
+      { icon: '/assets/icons/leaf.svg', title: 'Masks', text: 'Carved expressions. Ancient and modern.' },
+      { icon: '/assets/icons/shipping.svg', title: 'Bowls', text: 'Natural shapes. Unique grains.' },
+      { icon: '/assets/icons/leaf.svg', title: 'Olive Wood Creations', text: 'From roots to timeless pieces.' },
+      { icon: '/assets/icons/heart.svg', title: 'One-of-a-kind Pieces', text: 'Nothing here is ever the same.' },
+    ],
+  },
+  gallery: {
+    eyebrow: 'Work > Sculptures > Ancestor',
+    cta: 'Inquire About This Piece',
+    viewSpace: 'View in your space',
+  },
+  contactSection: {
+    headline: "Let's Talk",
+    mapLabelTop: 'Chania',
+    mapLabelBottom: ['Voulgaro', 'Kissamos', 'Crete'],
+    story: [
+      'Many people discover the workshop by accident.',
+      'Some stay for five minutes.',
+      'Some stay for hours.',
+      'Everyone leaves with a story.',
+      'The wood remembers. So will you.',
+    ],
+    closing: 'Come find the workshop.',
+  },
+};

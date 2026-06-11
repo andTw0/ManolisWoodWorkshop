@@ -1,31 +1,24 @@
-# Prototype
+# Manolis Tsouris Website Prototype
 
-Static MVP prototype for Friday vibecoding.
+Responsive single-page scroll-story prototype based on the uploaded storyboard and slide design docs.
 
-## Stack
+## Run locally
 
-- HTML
-- CSS
-- Vanilla JavaScript
-- JSON product data
-
-## Pages
-
-| File | Purpose |
-|---|---|
-| `index.html` | Home / Workshop |
-| `gallery.html` | Originals / product catalogue |
-| `about.html` | Meet Manolis |
-| `contact.html` | Visit / Ask |
-
-## Data
-
-Product data lives in:
-
-```text
-src/data/products.json
+```bash
+npm install
+npm run dev
 ```
 
-## Core requirement
+Open `http://localhost:3000`.
 
-Inquiry-first catalogue. No real checkout yet.
+## Main directories
+
+- `src/sections` — one React section per slide.
+- `src/components` — reusable navigation, buttons, parallax, gallery, contact components.
+- `src/content` — editable text, navigation, gallery data.
+- `public/assets` — replaceable image, icon, decoration, and background assets.
+- `docs` — architecture, slide specifications, and handoff documentation.
+
+## No webshop
+
+This prototype has no cart, checkout, pricing, payments, accounts, or backend ordering system. Product CTAs point to WhatsApp/email inquiry flows only.
