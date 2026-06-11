@@ -30,7 +30,9 @@ export function Navigation() {
       { rootMargin: '-35% 0px -55% 0px', threshold: 0.01 },
     );
 
-    sections.forEach((section) => observer.observe(section));
+    sections.forEach((section) => {
+      if (section) observer.observe(section);
+    });
     return () => observer.disconnect();
   }, []);
 
