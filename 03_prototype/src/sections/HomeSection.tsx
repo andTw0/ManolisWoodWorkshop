@@ -28,7 +28,7 @@ export function HomeSection() {
             height={1410}
             priority
             sizes="(max-width: 1024px) 100vw, 56vw"
-            className="absolute right-[-2rem] top-[-8rem] h-[clamp(40rem,72vw,78rem)] w-auto max-w-none object-contain"
+            className="absolute right-[-2rem] top-[-15rem] h-[clamp(40rem,72vw,78rem)] w-auto max-w-none object-contain"
           />
           <Image src="/assets/decorations/scribble-face-right.svg" alt="" width={260} height={420} className="absolute right-6 top-8 hidden opacity-50 md:block" />
         </motion.div>
