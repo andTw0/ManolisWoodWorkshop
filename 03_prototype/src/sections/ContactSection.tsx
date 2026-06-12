@@ -8,7 +8,7 @@ import { siteContent } from '@/content/siteContent';
 
 export function ContactSection() {
   return (
-    <SectionShell id="contact" className="grid items-center overflow-hidden">
+    <SectionShell id="contact" className="grid items-center">
       <div className="grid gap-12 lg:grid-cols-[0.8fr_1.25fr_0.9fr] lg:items-center">
         <motion.div initial={{ opacity: 0, x: -24 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.25 }} transition={{ duration: 0.55 }}>
           <h2 className="font-display text-5xl uppercase text-orangeBurnt md:text-7xl">{siteContent.contactSection.headline}</h2>
@@ -25,7 +25,7 @@ export function ContactSection() {
           </p>
         </motion.div>
 
-        <motion.div initial={{ opacity: 0, x: 24 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.25 }} transition={{ duration: 0.55 }} className="texture-panel p-6 md:p-9">
+        <motion.div initial={{ opacity: 0, x: 24 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true, amount: 0.25 }} transition={{ duration: 0.55 }} className="p-6 md:p-9">
           <div className="grid gap-6 text-lg leading-8 text-mutedBone">
             {siteContent.contactSection.story.map((line) => <p key={line}>{line}</p>)}
           </div>

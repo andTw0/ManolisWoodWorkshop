@@ -22,7 +22,7 @@ export function GalleryShowcase() {
         ))}
       </div>
 
-      <div className="relative order-1 min-h-[420px] overflow-hidden rough-border bg-black/40 lg:order-none lg:min-h-[680px]">
+      <div className="relative order-1 min-h-[420px] overflow-hidden lg:order-none lg:min-h-[680px]">
         <AnimatePresence mode="wait">
           <motion.div key={selected.id} initial={{ opacity: 0, scale: 1.03 }} animate={{ opacity: 1, scale: 1 }} exit={{ opacity: 0, scale: 0.98 }} transition={{ duration: 0.45 }} className="absolute inset-0">
             <Image src={selected.image} alt={selected.title} fill priority={selected.id === 'ancestor'} sizes="(max-width: 1024px) 100vw, 55vw" className="object-cover" />
@@ -31,7 +31,7 @@ export function GalleryShowcase() {
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/20" />
       </div>
 
-      <div className="order-3 texture-panel p-6 md:p-9">
+      <div className="order-3 p-6 md:p-9">
         <p className="mb-5 text-xs uppercase tracking-[0.18em] text-orangeBurnt">{siteContent.gallery.eyebrow}</p>
         <AnimatePresence mode="wait">
           <motion.div key={selected.id} initial={{ opacity: 0, x: 18 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -18 }} transition={{ duration: 0.25 }}>

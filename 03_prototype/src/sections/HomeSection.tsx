@@ -8,7 +8,7 @@ import { siteContent } from '@/content/siteContent';
 
 export function HomeSection() {
   return (
-    <SectionShell id="home" className="grid items-end overflow-hidden">
+    <SectionShell id="home" className="grid items-end">
       <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
         <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="relative z-10">
           <h1 className="brush-heading max-w-[850px] text-[clamp(4rem,12vw,12rem)] text-bone">

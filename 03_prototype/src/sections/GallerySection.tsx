@@ -3,7 +3,7 @@ import { GalleryShowcase } from '@/components/GalleryShowcase';
 
 export function GallerySection() {
   return (
-    <SectionShell id="gallery" className="overflow-hidden">
+    <SectionShell id="gallery">
       <GalleryShowcase />
     </SectionShell>
   );
