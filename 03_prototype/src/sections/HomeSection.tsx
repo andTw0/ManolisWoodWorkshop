@@ -9,7 +9,7 @@ import { siteContent } from '@/content/siteContent';
 export function HomeSection() {
   return (
     <SectionShell id="home" className="grid items-end overflow-hidden">
-      <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+      <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
         <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }} className="relative z-10">
           <h1 className="brush-heading max-w-[850px] text-[clamp(4rem,12vw,12rem)] text-bone">
             {siteContent.home.headline.map((line, index) => (
@@ -20,9 +20,16 @@ export function HomeSection() {
           <BrushButton href="#gallery" className="mt-8">{siteContent.home.cta}</BrushButton>
         </motion.div>
 
-        <motion.div initial={{ opacity: 0, scale: 1.04 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.9, delay: 0.15 }} className="relative min-h-[460px] overflow-hidden rough-border bg-black/40 lg:min-h-[720px]">
-          <Image src="/assets/hero/hero-manolis-carving.webp" alt="Manolis carving olive wood placeholder" fill priority sizes="(max-width: 1024px) 100vw, 56vw" className="object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/60 via-transparent to-black/10" />
+        <motion.div initial={{ opacity: 0, scale: 1.04 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 0.9, delay: 0.15 }} className="relative self-start min-h-[520px] overflow-visible lg:min-h-[820px]">
+          <Image
+            src="/assets/hero/hero-manolis-carving.webp"
+            alt="Manolis carving olive wood placeholder"
+            width={2170}
+            height={1410}
+            priority
+            sizes="(max-width: 1024px) 100vw, 56vw"
+            className="absolute right-[-2rem] top-[-8rem] h-[clamp(40rem,72vw,78rem)] w-auto max-w-none object-contain"
+          />
           <Image src="/assets/decorations/scribble-face-right.svg" alt="" width={260} height={420} className="absolute right-6 top-8 hidden opacity-50 md:block" />
         </motion.div>
       </div>
